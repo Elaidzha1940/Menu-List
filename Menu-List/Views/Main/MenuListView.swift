@@ -13,8 +13,11 @@ struct MenuListView: View {
     var body: some View {
         
         NavigationView {
-            Text("Menu List View")
-                .navigationTitle("Menu List")
+            List(MockData.menu) { menu in
+              MenuListCell(menu: menu)
+            }
+            .listStyle(.grouped)
+            .navigationTitle("Menu List")
         }
     }
 }
