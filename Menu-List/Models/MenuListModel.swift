@@ -20,7 +20,7 @@ struct MenuListModel: Identifiable, Codable {
     let carbs: Int 
 }
 
-struct MenuListResponse {
+struct MenuListResponse: Decodable {
     let request: [MenuListModel]
 }
 
