@@ -1,7 +1,7 @@
 //  /*
 //
 //  Project: Menu-List
-//  File: MenuListView.swift
+//  File: AccountView.swift
 //  Created by: Elaidzha Shchukin
 //  Date: 07.02.2024
 //
@@ -9,16 +9,17 @@
 
 import SwiftUI
 
-struct MenuListView: View {
+struct AccountView: View {
     var body: some View {
         
-        VStack {
-            Text("Menu List View")
+        NavigationView {
+            Text("Account")
+                .navigationTitle("Account")
         }
     }
 }
 
 #Preview {
-    MenuListView()
+    AccountView()
         .preferredColorScheme(.dark)
 }
