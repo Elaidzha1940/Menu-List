@@ -11,6 +11,9 @@
 		E4A702F12B73A843004E657A /* MenuTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A702F02B73A843004E657A /* MenuTabView.swift */; };
 		E4A702F32B73A845004E657A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A702F22B73A845004E657A /* Assets.xcassets */; };
 		E4A702F62B73A845004E657A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A702F52B73A845004E657A /* Preview Assets.xcassets */; };
+		E4A702FD2B73A9D6004E657A /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A702FC2B73A9D6004E657A /* MenuListView.swift */; };
+		E4A702FF2B73A9E4004E657A /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A702FE2B73A9E4004E657A /* AccountView.swift */; };
+		E4A703012B73A9F3004E657A /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A703002B73A9F3004E657A /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		E4A702F02B73A843004E657A /* MenuTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabView.swift; sourceTree = "<group>"; };
 		E4A702F22B73A845004E657A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4A702F52B73A845004E657A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4A702FC2B73A9D6004E657A /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
+		E4A702FE2B73A9E4004E657A /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		E4A703002B73A9F3004E657A /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 				E4A702F02B73A843004E657A /* MenuTabView.swift */,
 				E4A702F22B73A845004E657A /* Assets.xcassets */,
 				E4A702F42B73A845004E657A /* Preview Content */,
+				E4A702FC2B73A9D6004E657A /* MenuListView.swift */,
+				E4A702FE2B73A9E4004E657A /* AccountView.swift */,
+				E4A703002B73A9F3004E657A /* OrderView.swift */,
 			);
 			path = "Menu-List";
 			sourceTree = "<group>";
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A702FF2B73A9E4004E657A /* AccountView.swift in Sources */,
+				E4A702FD2B73A9D6004E657A /* MenuListView.swift in Sources */,
 				E4A702F12B73A843004E657A /* MenuTabView.swift in Sources */,
 				E4A702EF2B73A843004E657A /* Menu_ListApp.swift in Sources */,
+				E4A703012B73A9F3004E657A /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +209,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

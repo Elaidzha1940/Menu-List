@@ -14,6 +14,7 @@ struct Menu_ListApp: App {
     var body: some Scene {
         WindowGroup {
             MenuTabView()
+                .preferredColorScheme(.dark)
         }
     }
 }

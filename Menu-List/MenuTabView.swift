@@ -13,11 +13,29 @@ struct MenuTabView: View {
     var body: some View {
         
         TabView {
-            Text("Menu")
+            MenuListView()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
+            
+            AccountView()
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Account")
+                }
+            
+            OrderView()
+                .tabItem {
+                    Image(systemName: "bag.fill")
+                    Text("Home")
+                }
         }
+        .accentColor(Color("brandPrimary"))
     }
 }
 
 #Preview {
     MenuTabView()
+        .preferredColorScheme(.dark)
 }
