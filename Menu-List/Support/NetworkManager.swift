@@ -7,13 +7,13 @@
 //
 //  */
 
-import Foundation
+import UIKit
 
 final class NetworkManager {
     static let shared = NetworkManager()
     
-    static let baseURL = "https://noma.dk/noma-in-kyoto-magazine/"
-    private let menuURL = baseURL + ""
+    static let baseURL = "https://www.gordonramsayrestaurants.com/restaurant-gordon-ramsay/menus/"
+    private let menuURL = baseURL + "menu"
     
     private init() {}
     

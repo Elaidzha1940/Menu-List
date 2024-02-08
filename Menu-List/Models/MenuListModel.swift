@@ -9,7 +9,7 @@
 
 import Foundation
 
-struct MenuListModel: Identifiable, Codable {
+struct MenuListModel: Identifiable, Decodable {
     let id: Int
     let name: String
     let description: String
