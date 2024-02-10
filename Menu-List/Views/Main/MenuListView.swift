@@ -10,32 +10,19 @@
 import SwiftUI
 
 struct MenuListView: View {
-    @State private var menu: [MenuListModel] = []
+     @StateObject var viewModel = MenuListViewModel()
     
     var body: some View {
         
         NavigationView {
-            List(menu) { menu in
+            List(viewModel.menu) { menu in
               MenuListCell(menu: menu)
             }
             .listStyle(.grouped)
             .navigationTitle("Menu List")
         }
         .onAppear {
-            getMenuList()
-        }
-    }
-    
-    func getMenuList() {
-        NetworkManager.shared.getMenu { result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let menu):
-                    self.menu = menu
-                case .failure(let error):
-                    print(error.localizedDescription)
-                }
-            }
+            viewModel.getMenuList()
         }
     }
 }

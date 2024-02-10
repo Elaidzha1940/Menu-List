@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E40DE2BF2B76A487002644B1 /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40DE2BE2B76A487002644B1 /* MenuListViewModel.swift */; };
+		E496AA6C2B7827D000572640 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E496AA6B2B7827D000572640 /* Alert.swift */; };
 		E4A702EF2B73A843004E657A /* Menu_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A702EE2B73A843004E657A /* Menu_ListApp.swift */; };
 		E4A702F12B73A843004E657A /* MenuTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A702F02B73A843004E657A /* MenuTabView.swift */; };
 		E4A702F32B73A845004E657A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A702F22B73A845004E657A /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		E40DE2BE2B76A487002644B1 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
+		E496AA6B2B7827D000572640 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E4A702EB2B73A843004E657A /* Menu-List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menu-List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A702EE2B73A843004E657A /* Menu_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_ListApp.swift; sourceTree = "<group>"; };
 		E4A702F02B73A843004E657A /* MenuTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				E4A703022B73B309004E657A /* Models */,
 				E4A703062B73B624004E657A /* Support */,
 				E4A702F42B73A845004E657A /* Preview Content */,
+				E496AA6B2B7827D000572640 /* Alert.swift */,
 			);
 			path = "Menu-List";
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				E4A7030D2B73E533004E657A /* NetworkManager.swift in Sources */,
 				E4A702F12B73A843004E657A /* MenuTabView.swift in Sources */,
 				E4A702EF2B73A843004E657A /* Menu_ListApp.swift in Sources */,
+				E496AA6C2B7827D000572640 /* Alert.swift in Sources */,
 				E4A703012B73A9F3004E657A /* OrderView.swift in Sources */,
 				E40DE2BF2B76A487002644B1 /* MenuListViewModel.swift in Sources */,
 			);
