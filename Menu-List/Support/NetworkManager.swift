@@ -11,6 +11,7 @@ import UIKit
 
 final class NetworkManager {
     static let shared = NetworkManager()
+    private let cache = NSCache<NSString, UIImage>()
     
     static let baseURL = "https://www.gordonramsayrestaurants.com/restaurant-gordon-ramsay/menus/"
     private let menuURL = baseURL + "menu"
@@ -46,6 +47,31 @@ final class NetworkManager {
             } catch {
                 completion(.failure(.invalidData))
             }
+        }
+        task.resume()
+    }
+    
+    func downloadImage(fromURLString urlString: String, completion: @escaping (UIImage?) -> ()) {
+        let cacheKey = NSString(string: urlString)
+        
+        if let image = cache.object(forKey: cacheKey) {
+            completion(image)
+            return
+        }
+        
+        guard let url = URL(string: urlString) else {
+            completion(nil)
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+            guard let data = data, let image = UIImage(data: data) else {
+                completion(nil)
+                return
+            }
+            
+            self.cache.setObject(image, forKey: cacheKey)
+            completion(image)
         }
         task.resume()
     }
