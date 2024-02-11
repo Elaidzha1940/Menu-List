@@ -12,10 +12,13 @@ import SwiftUI
 final class MenuListViewModel: ObservableObject {
     @Published var menu: [MenuListModel] = []
     @Published var alertItem: AlertItem?
+    @Published var isLoading = false
     
     func getMenuList() {
+        isLoading = true
         NetworkManager.shared.getMenu { result in
             DispatchQueue.main.async { [self] in
+                isLoading = true
                 switch result {
                 case .success(let menu):
                     self.menu = menu
