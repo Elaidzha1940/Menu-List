@@ -76,15 +76,12 @@
 			isa = PBXGroup;
 			children = (
 				E4A702EE2B73A843004E657A /* Menu_ListApp.swift */,
+				E4A703022B73B309004E657A /* Models */,
 				E4A703042B73B323004E657A /* Views */,
 				E4A703032B73B313004E657A /* ViewModels */,
-				E4A703022B73B309004E657A /* Models */,
+				E4F547282B78ED3F0051D32D /* Utilities */,
 				E4A703062B73B624004E657A /* Support */,
 				E4A702F42B73A845004E657A /* Preview Content */,
-				E496AA6B2B7827D000572640 /* Alert.swift */,
-				E4F547222B7843F00051D32D /* LoadingView.swift */,
-				E4F547242B78457F0051D32D /* Color+Ext.swift */,
-				E4F547262B78E4E30051D32D /* RemoteImage.swift */,
 			);
 			path = "Menu-List";
 			sourceTree = "<group>";
@@ -116,6 +113,8 @@
 		E4A703042B73B323004E657A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E4F5472E2B78EEBF0051D32D /* Image */,
+				E4F5472D2B78EE7E0051D32D /* UIKit Components */,
 				E4A7030B2B73E35D004E657A /* Detail */,
 				E4A703052B73B5F6004E657A /* Main */,
 			);
@@ -137,8 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				E4A702F22B73A845004E657A /* Assets.xcassets */,
-				E4A7030C2B73E533004E657A /* NetworkManager.swift */,
-				E4A7030E2B73E7D3004E657A /* MError.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -149,6 +146,65 @@
 				E4A703092B73E32F004E657A /* MenuListCell.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		E4F547282B78ED3F0051D32D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E4F5472C2B78EDCE0051D32D /* Alerts */,
+				E4F5472B2B78EDC10051D32D /* Errors */,
+				E4F5472A2B78ED870051D32D /* Managers */,
+				E4F547292B78ED610051D32D /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E4F547292B78ED610051D32D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E4F547242B78457F0051D32D /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E4F5472A2B78ED870051D32D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E4A7030C2B73E533004E657A /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E4F5472B2B78EDC10051D32D /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				E4A7030E2B73E7D3004E657A /* MError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		E4F5472C2B78EDCE0051D32D /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				E496AA6B2B7827D000572640 /* Alert.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		E4F5472D2B78EE7E0051D32D /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				E4F547222B7843F00051D32D /* LoadingView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		E4F5472E2B78EEBF0051D32D /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				E4F547262B78E4E30051D32D /* RemoteImage.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
