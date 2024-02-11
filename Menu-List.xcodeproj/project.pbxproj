@@ -22,6 +22,7 @@
 		E4A7030F2B73E7D3004E657A /* MError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A7030E2B73E7D3004E657A /* MError.swift */; };
 		E4F547232B7843F00051D32D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F547222B7843F00051D32D /* LoadingView.swift */; };
 		E4F547252B78457F0051D32D /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F547242B78457F0051D32D /* Color+Ext.swift */; };
+		E4F547272B78E4E30051D32D /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F547262B78E4E30051D32D /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		E4A7030E2B73E7D3004E657A /* MError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MError.swift; sourceTree = "<group>"; };
 		E4F547222B7843F00051D32D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E4F547242B78457F0051D32D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		E4F547262B78E4E30051D32D /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				E496AA6B2B7827D000572640 /* Alert.swift */,
 				E4F547222B7843F00051D32D /* LoadingView.swift */,
 				E4F547242B78457F0051D32D /* Color+Ext.swift */,
+				E4F547262B78E4E30051D32D /* RemoteImage.swift */,
 			);
 			path = "Menu-List";
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				E4F547232B7843F00051D32D /* LoadingView.swift in Sources */,
 				E4A7030D2B73E533004E657A /* NetworkManager.swift in Sources */,
 				E4A702F12B73A843004E657A /* MenuTabView.swift in Sources */,
+				E4F547272B78E4E30051D32D /* RemoteImage.swift in Sources */,
 				E4A702EF2B73A843004E657A /* Menu_ListApp.swift in Sources */,
 				E496AA6C2B7827D000572640 /* Alert.swift in Sources */,
 				E4A703012B73A9F3004E657A /* OrderView.swift in Sources */,
