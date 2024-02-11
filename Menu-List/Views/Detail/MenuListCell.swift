@@ -15,8 +15,7 @@ struct MenuListCell: View {
     var body: some View {
         
         HStack {
-            Image("steak")
-                .resizable()
+            MenuListRemoteImage(urlString: menu.imageURL)
                 .scaledToFit()
                 .frame(width: 130, height: 100)
                 .cornerRadius(15)
