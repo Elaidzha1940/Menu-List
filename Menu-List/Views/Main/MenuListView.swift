@@ -24,6 +24,9 @@ struct MenuListView: View {
         .onAppear {
             viewModel.getMenuList()
         }
+        .alert(item: $viewModel.alertItem) { alert in
+            Alert(title: alert.title, message: alert.message, dismissButton: alert.dismissButton)
+        }
     }
 }
 

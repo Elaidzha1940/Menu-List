@@ -31,7 +31,7 @@ struct MenuTabView: View {
                     Text("Home")
                 }
         }
-        .accentColor(Color("brandPrimary"))
+        .accentColor(.brandPrimaryColor)
     }
 }
 
