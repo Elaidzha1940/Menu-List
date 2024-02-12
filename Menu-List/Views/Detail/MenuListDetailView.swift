@@ -29,29 +29,9 @@ struct MenuListDetailView: View {
                     .padding(1)
                 
                 HStack(spacing: 40) {
-                    VStack(spacing: 4) {
-                        Text("Calories")
-                            .font(.system(size: 12, weight: .bold, design: .monospaced))
-                        Text("\(menu.calories)")
-                            .font(.system(size: 12, weight: .semibold, design: .monospaced))
-                            .foregroundColor(.secondary)
-                    }
-                    
-                    VStack {
-                        Text("C arbs")
-                            .font(.system(size: 12, weight: .bold, design: .monospaced))
-                        Text("\(menu.carbs)")
-                            .font(.system(size: 12, weight: .semibold, design: .monospaced))
-                            .foregroundColor(.secondary)
-                    }
-                    
-                    VStack {
-                        Text("Protein")
-                            .font(.system(size: 12, weight: .bold, design: .monospaced))
-                        Text("\(menu.protein)")
-                            .font(.system(size: 12, weight: .semibold, design: .monospaced))
-                            .foregroundColor(.secondary)
-                    }
+                    NutritionInfo(title: "Calories", value: menu.calories)
+                    NutritionInfo(title: "Carbs", value: menu.carbs)
+                    NutritionInfo(title: "Protein", value: menu.protein)
                 }
             }
             
@@ -78,4 +58,19 @@ struct MenuListDetailView: View {
 
 #Preview {
     MenuListDetailView(menu: MockData.sapmleMenuListModel, isShowingDetail: .constant(true))
+}
+
+struct NutritionInfo: View {
+    let title: String
+    let value: Int
+    
+    var body: some View {
+        VStack(spacing: 4) {
+            Text(title)
+                .font(.system(size: 12, weight: .bold, design: .monospaced))
+            Text("\(value)")
+                .font(.system(size: 12, weight: .semibold, design: .monospaced))
+                .foregroundColor(.secondary)
+        }
+    }
 }
