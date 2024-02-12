@@ -58,17 +58,9 @@ struct MenuListDetailView: View {
             Spacer()
             
             Button(action: {
-                
+                //action
             }, label: {
-                Text("\(menu.price, specifier: "%.2f") - Add to order")
-                    .font(.system(size: 20, weight: .semibold, design: .rounded))
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .foregroundColor(Color(.systemBackground))
-                    .background(Color.brandPrimaryColor)
-                    .cornerRadius(15)
-                    .padding()
-                
+               MLButton(title: "\(menu.price, specifier: "%.2f") - Add to order")
             })
             .padding(.bottom, 10)
         }
@@ -79,16 +71,7 @@ struct MenuListDetailView: View {
         .overlay(Button(action: {
             isShowingDetail = false
         }, label: {
-            ZStack {
-                Circle()
-                    .frame(width: 30, height: 30)
-                    .foregroundColor(.white)
-                    .opacity(0.6)
-                Image(systemName: "xmark")
-                    .imageScale(.small)
-                    .frame(width: 40, height: 40)
-                    .foregroundColor(.black)
-            }
+          XDissmissButton()
         }), alignment: .topTrailing)
     }
 }
