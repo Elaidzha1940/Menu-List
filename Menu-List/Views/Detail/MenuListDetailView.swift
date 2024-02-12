@@ -60,14 +60,36 @@ struct MenuListDetailView: View {
             Button(action: {
                 
             }, label: {
-                Text("Button")
+                Text("\(menu.price, specifier: "%.2f") - Add to order")
+                    .font(.system(size: 20, weight: .semibold, design: .rounded))
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .foregroundColor(Color(.systemBackground))
+                    .background(Color.brandPrimaryColor)
+                    .cornerRadius(15)
+                    .padding()
+                
             })
-            .padding(.bottom, 30)
+            .padding(.bottom, 10)
         }
         .frame(width: 300, height: 525)
         .background(Color(.systemBackground))
         .cornerRadius(15)
         .shadow(radius: 40)
+        .overlay(Button(action: {
+            //action
+        }, label: {
+            ZStack {
+                Circle()
+                    .frame(width: 30, height: 30)
+                    .foregroundColor(.white)
+                    .opacity(0.6)
+                Image(systemName: "xmark")
+                    .imageScale(.small)
+                    .frame(width: 40, height: 40)
+                    .foregroundColor(.black)
+            }
+        }), alignment: .topTrailing)
     }
 }
 
