@@ -11,11 +11,11 @@ import SwiftUI
 
 struct MenuListDetailView: View {
     let menu: MenuListModel
+    @Binding var isShowingDetail: Bool
     
     var body: some View {
         VStack {
-            Image("steak")
-                .resizable()
+            MenuListRemoteImage(urlString: menu.imageURL)
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 300, height: 225)
             
@@ -77,7 +77,7 @@ struct MenuListDetailView: View {
         .cornerRadius(15)
         .shadow(radius: 40)
         .overlay(Button(action: {
-            //action
+            isShowingDetail = false
         }, label: {
             ZStack {
                 Circle()
@@ -94,5 +94,5 @@ struct MenuListDetailView: View {
 }
 
 #Preview {
-    MenuListDetailView(menu: MockData.sapmleMenuListModel)
+    MenuListDetailView(menu: MockData.sapmleMenuListModel, isShowingDetail: .constant(true))
 }

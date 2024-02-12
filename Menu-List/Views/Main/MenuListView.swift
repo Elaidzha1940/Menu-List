@@ -12,6 +12,7 @@ import SwiftUI
 struct MenuListView: View {
     @StateObject var viewModel = MenuListViewModel()
     @State private var isShowingDetail = false
+    @State private var selectedMenuListModel: MenuListModel?
     
     var body: some View {
         
@@ -20,18 +21,22 @@ struct MenuListView: View {
                 List(viewModel.menu) { menu in
                     MenuListCell(menu: menu)
                         .onTapGesture {
+                            selectedMenuListModel = menu
                             isShowingDetail = true
                         }
                 }
                 .listStyle(.grouped)
                 .navigationTitle("Menu List")
+                .disabled(isShowingDetail)
             }
             .onAppear {
                 viewModel.getMenuList()
             }
+            .blur(radius: isShowingDetail ? 20 : 0)
             
             if isShowingDetail {
-                MenuListDetailView(menu: MockData.sapmleMenuListModel)
+                MenuListDetailView(menu: selectedMenuListModel!,
+                                   isShowingDetail: $isShowingDetail)
             }
             
             if viewModel.isLoading {
