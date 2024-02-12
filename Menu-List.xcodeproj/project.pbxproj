@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E40DE2BF2B76A487002644B1 /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40DE2BE2B76A487002644B1 /* MenuListViewModel.swift */; };
+		E44FC8FA2B7A726000C3129E /* MenuListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FC8F92B7A726000C3129E /* MenuListDetailView.swift */; };
 		E496AA6C2B7827D000572640 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E496AA6B2B7827D000572640 /* Alert.swift */; };
 		E4A702EF2B73A843004E657A /* Menu_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A702EE2B73A843004E657A /* Menu_ListApp.swift */; };
 		E4A702F12B73A843004E657A /* MenuTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A702F02B73A843004E657A /* MenuTabView.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		E40DE2BE2B76A487002644B1 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
+		E44FC8F92B7A726000C3129E /* MenuListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListDetailView.swift; sourceTree = "<group>"; };
 		E496AA6B2B7827D000572640 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E4A702EB2B73A843004E657A /* Menu-List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menu-List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A702EE2B73A843004E657A /* Menu_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_ListApp.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				E4A703092B73E32F004E657A /* MenuListCell.swift */,
+				E44FC8F92B7A726000C3129E /* MenuListDetailView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4A702FF2B73A9E4004E657A /* AccountView.swift in Sources */,
+				E44FC8FA2B7A726000C3129E /* MenuListDetailView.swift in Sources */,
 				E4A7030F2B73E7D3004E657A /* MError.swift in Sources */,
 				E4A7030A2B73E32F004E657A /* MenuListCell.swift in Sources */,
 				E4A702FD2B73A9D6004E657A /* MenuListView.swift in Sources */,
