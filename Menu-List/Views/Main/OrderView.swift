@@ -21,5 +21,4 @@ struct OrderView: View {
 
 #Preview {
     OrderView()
-        .preferredColorScheme(.dark)
 }

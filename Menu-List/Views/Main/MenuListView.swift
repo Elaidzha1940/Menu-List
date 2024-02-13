@@ -49,5 +49,4 @@ struct MenuListView: View {
 
 #Preview {
     MenuListView()
-        .preferredColorScheme(.dark)
 }

@@ -37,5 +37,4 @@ struct MenuTabView: View {
 
 #Preview {
     MenuTabView()
-        .preferredColorScheme(.dark)
 }
