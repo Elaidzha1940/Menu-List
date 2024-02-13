@@ -42,6 +42,9 @@ struct AccountView: View {
             }
             .navigationTitle("Account")
         }
+        .onAppear {
+            viewModel.retrievedUser()
+        }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,
                   message: alertItem.message,
