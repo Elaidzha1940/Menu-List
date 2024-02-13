@@ -13,6 +13,8 @@ final class MenuListViewModel: ObservableObject {
     @Published var menu: [MenuListModel] = []
     @Published var alertItem: AlertItem?
     @Published var isLoading = false
+    @Published var isShowingDetail = false
+    @Published var selectedMenuListModel: MenuListModel?
     
     func getMenuList() {
         isLoading = true
