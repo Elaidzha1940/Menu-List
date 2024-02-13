@@ -11,6 +11,7 @@
 		E44FC8FA2B7A726000C3129E /* MenuListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FC8F92B7A726000C3129E /* MenuListDetailView.swift */; };
 		E44FC8FE2B7AE30C00C3129E /* MLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FC8FD2B7AE30C00C3129E /* MLButton.swift */; };
 		E44FC9002B7AE4CD00C3129E /* XDissmissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FC8FF2B7AE4CD00C3129E /* XDissmissButton.swift */; };
+		E461518B2B7BA974006DAFBE /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E461518A2B7BA974006DAFBE /* AccountViewModel.swift */; };
 		E496AA6C2B7827D000572640 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E496AA6B2B7827D000572640 /* Alert.swift */; };
 		E4A702EF2B73A843004E657A /* Menu_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A702EE2B73A843004E657A /* Menu_ListApp.swift */; };
 		E4A702F12B73A843004E657A /* MenuTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A702F02B73A843004E657A /* MenuTabView.swift */; };
@@ -33,6 +34,7 @@
 		E44FC8F92B7A726000C3129E /* MenuListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListDetailView.swift; sourceTree = "<group>"; };
 		E44FC8FD2B7AE30C00C3129E /* MLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLButton.swift; sourceTree = "<group>"; };
 		E44FC8FF2B7AE4CD00C3129E /* XDissmissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDissmissButton.swift; sourceTree = "<group>"; };
+		E461518A2B7BA974006DAFBE /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		E496AA6B2B7827D000572640 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E4A702EB2B73A843004E657A /* Menu-List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menu-List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A702EE2B73A843004E657A /* Menu_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_ListApp.swift; sourceTree = "<group>"; };
@@ -79,6 +81,31 @@
 				E44FC8FF2B7AE4CD00C3129E /* XDissmissButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		E46151872B7BA919006DAFBE /* MenuListView */ = {
+			isa = PBXGroup;
+			children = (
+				E4A702FC2B73A9D6004E657A /* MenuListView.swift */,
+			);
+			path = MenuListView;
+			sourceTree = "<group>";
+		};
+		E46151882B7BA926006DAFBE /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				E4A702FE2B73A9E4004E657A /* AccountView.swift */,
+				E461518A2B7BA974006DAFBE /* AccountViewModel.swift */,
+			);
+			path = AccountView;
+			sourceTree = "<group>";
+		};
+		E46151892B7BA933006DAFBE /* OrderView */ = {
+			isa = PBXGroup;
+			children = (
+				E4A703002B73A9F3004E657A /* OrderView.swift */,
+			);
+			path = OrderView;
 			sourceTree = "<group>";
 		};
 		E4A702E22B73A843004E657A = {
@@ -149,9 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				E4A702F02B73A843004E657A /* MenuTabView.swift */,
-				E4A702FC2B73A9D6004E657A /* MenuListView.swift */,
-				E4A702FE2B73A9E4004E657A /* AccountView.swift */,
-				E4A703002B73A9F3004E657A /* OrderView.swift */,
+				E46151872B7BA919006DAFBE /* MenuListView */,
+				E46151882B7BA926006DAFBE /* AccountView */,
+				E46151892B7BA933006DAFBE /* OrderView */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -306,6 +333,7 @@
 				E44FC8FA2B7A726000C3129E /* MenuListDetailView.swift in Sources */,
 				E4A7030F2B73E7D3004E657A /* MError.swift in Sources */,
 				E4A7030A2B73E32F004E657A /* MenuListCell.swift in Sources */,
+				E461518B2B7BA974006DAFBE /* AccountViewModel.swift in Sources */,
 				E4A702FD2B73A9D6004E657A /* MenuListView.swift in Sources */,
 				E4F547252B78457F0051D32D /* Color+Ext.swift in Sources */,
 				E4A703082B73D36A004E657A /* MenuListModel.swift in Sources */,
