@@ -28,7 +28,7 @@ struct AccountView: View {
                         .accentColor(.brandPrimaryColor)
                     
                     Button(action: {
-                        //action
+                        viewModel.saveChanges() 
                     }, label: {
                         Text("Save changes")
                     })
@@ -41,6 +41,11 @@ struct AccountView: View {
                 .toggleStyle(SwitchToggleStyle(tint: .brandPrimaryColor))
             }
             .navigationTitle("Account")
+        }
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
         }
     }
 }

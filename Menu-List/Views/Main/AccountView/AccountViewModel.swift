@@ -26,10 +26,15 @@ final class AccountViewModel: ObservableObject {
         }
         
         guard email.isValidEmail else {
-            
+            alertItem = AlertContext.invalidEmail
             return false
         }
         
         return true
+    }
+    
+    func saveChanges() {
+        guard isValidForm else { return }
+        print("Changes have been saved successfully")
     }
 }
