@@ -23,7 +23,7 @@ struct MenuListView: View {
                             viewModel.isShowingDetail = true
                         }
                 }
-                .listStyle(.grouped)
+                .listStyle(.plain)
                 .navigationTitle("Menu List")
                 .disabled(viewModel.isShowingDetail)
             }

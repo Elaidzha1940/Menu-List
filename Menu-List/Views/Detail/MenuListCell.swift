@@ -17,7 +17,7 @@ struct MenuListCell: View {
         HStack {
             MenuListRemoteImage(urlString: menu.imageURL)
                 .scaledToFit()
-                .frame(width: 130, height: 100)
+                .frame(width: 130, height: 90)
                 .cornerRadius(15)
             
             VStack(alignment: .leading, spacing: 3) {

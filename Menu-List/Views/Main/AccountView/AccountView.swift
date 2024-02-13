@@ -28,7 +28,7 @@ struct AccountView: View {
                         .accentColor(.brandPrimaryColor)
                     
                     Button(action: {
-                        viewModel.saveChanges() 
+                        viewModel.saveChanges()
                     }, label: {
                         Text("Save changes")
                     })
@@ -44,6 +44,7 @@ struct AccountView: View {
         }
         .onAppear {
             viewModel.retrievedUser()
+            
         }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,
