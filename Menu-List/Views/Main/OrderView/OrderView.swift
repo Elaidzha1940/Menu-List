@@ -21,14 +21,14 @@ struct OrderView: View {
                         ForEach(order.items) { menu in
                             MenuListCell(menu: menu)
                         }
-                        .onDelete(perform: deleteItems)
+                        .onDelete(perform: order.deleteItems)
                     }
                     .listStyle(.plain)
                     
                     Button(action: {
-                    //action
+                        //action
                     }, label: {
-                        MLButton(title: "$82.0 - Place Order")
+                        MLButton(title: "$\(order.totalPrice, specifier: "%.2f") - Place Order")
                     })
                     .padding(.bottom, 10)
                 }
@@ -39,10 +39,6 @@ struct OrderView: View {
             }
             .navigationTitle("Orders")
         }
-    }
-    
-    func deleteItems(at offsets: IndexSet) {
-        order.items.remove(atOffsets: offsets)
     }
 }
 

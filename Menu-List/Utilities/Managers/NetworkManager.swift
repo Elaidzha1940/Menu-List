@@ -13,7 +13,7 @@ final class NetworkManager {
     static let shared = NetworkManager()
     private let cache = NSCache<NSString, UIImage>()
     
-    static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
+    static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/appetizers"
     private let menuURL = baseURL + "appetizers"
     
     private init() {}
@@ -48,6 +48,7 @@ final class NetworkManager {
                 completion(.failure(.invalidData))
             }
         }
+        
         task.resume()
     }
     
@@ -73,6 +74,7 @@ final class NetworkManager {
             self.cache.setObject(image, forKey: cacheKey)
             completion(image)
         }
+        
         task.resume()
     }
 }

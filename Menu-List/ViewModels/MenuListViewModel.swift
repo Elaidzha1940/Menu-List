@@ -19,21 +19,21 @@ final class MenuListViewModel: ObservableObject {
     func getMenuList() {
         isLoading = true
         NetworkManager.shared.getMenu { result in
-            DispatchQueue.main.async { [self] in
-                isLoading = true
+            DispatchQueue.main.async { 
+                self.isLoading = true
                 switch result {
                 case .success(let menu):
                     self.menu = menu
                 case .failure(let error):
                     switch error {
                     case .invalidResponse:
-                        alertItem = AlertContext.invalidResponse
+                        self.alertItem = AlertContext.invalidResponse
                     case .invalidURL:
-                        alertItem = AlertContext.invalidURL
+                        self.alertItem = AlertContext.invalidURL
                     case .invalidData:
-                        alertItem = AlertContext.invalidData
+                        self.alertItem = AlertContext.invalidData
                     case .unableToComplete:
-                        alertItem = AlertContext.unableToComplete
+                        self.alertItem = AlertContext.unableToComplete
                     }
                 }
             }
