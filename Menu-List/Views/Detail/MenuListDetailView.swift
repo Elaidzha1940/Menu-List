@@ -41,6 +41,7 @@ struct MenuListDetailView: View {
             
             Button(action: {
                 order.add(menu)
+                isShowingDetail = false
             }, label: {
                MLButton(title: "\(menu.price, specifier: "%.2f") - Add to order")
             })
