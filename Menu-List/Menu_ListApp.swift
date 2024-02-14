@@ -11,9 +11,12 @@ import SwiftUI
 
 @main
 struct Menu_ListApp: App {
+    
+    var order = Order()
+    
     var body: some Scene {
         WindowGroup {
-            MenuTabView()
+            MenuTabView().environmentObject(order)
                 .preferredColorScheme(.dark)
         }
     }

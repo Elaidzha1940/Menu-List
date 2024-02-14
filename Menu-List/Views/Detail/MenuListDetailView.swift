@@ -13,6 +13,8 @@ struct MenuListDetailView: View {
     let menu: MenuListModel
     @Binding var isShowingDetail: Bool
     
+    @EnvironmentObject var order: Order
+    
     var body: some View {
         VStack {
             MenuListRemoteImage(urlString: menu.imageURL)
@@ -38,7 +40,7 @@ struct MenuListDetailView: View {
             Spacer()
             
             Button(action: {
-                //action
+                order.add(menu)
             }, label: {
                MLButton(title: "\(menu.price, specifier: "%.2f") - Add to order")
             })

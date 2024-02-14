@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E40DE2BF2B76A487002644B1 /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40DE2BE2B76A487002644B1 /* MenuListViewModel.swift */; };
 		E41D2FA42B7CDBEA00216DBF /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41D2FA32B7CDBEA00216DBF /* EmptyState.swift */; };
+		E41D2FA62B7D053300216DBF /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41D2FA52B7D053300216DBF /* Order.swift */; };
 		E44FC8FA2B7A726000C3129E /* MenuListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FC8F92B7A726000C3129E /* MenuListDetailView.swift */; };
 		E44FC8FE2B7AE30C00C3129E /* MLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FC8FD2B7AE30C00C3129E /* MLButton.swift */; };
 		E44FC9002B7AE4CD00C3129E /* XDissmissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FC8FF2B7AE4CD00C3129E /* XDissmissButton.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		E40DE2BE2B76A487002644B1 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
 		E41D2FA32B7CDBEA00216DBF /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		E41D2FA52B7D053300216DBF /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		E44FC8F92B7A726000C3129E /* MenuListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListDetailView.swift; sourceTree = "<group>"; };
 		E44FC8FD2B7AE30C00C3129E /* MLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLButton.swift; sourceTree = "<group>"; };
 		E44FC8FF2B7AE4CD00C3129E /* XDissmissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDissmissButton.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				E4A703072B73D36A004E657A /* MenuListModel.swift */,
 				E461518E2B7BE234006DAFBE /* User.swift */,
+				E41D2FA52B7D053300216DBF /* Order.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				E44FC8FA2B7A726000C3129E /* MenuListDetailView.swift in Sources */,
 				E4A7030F2B73E7D3004E657A /* MError.swift in Sources */,
 				E4A7030A2B73E32F004E657A /* MenuListCell.swift in Sources */,
+				E41D2FA62B7D053300216DBF /* Order.swift in Sources */,
 				E461518B2B7BA974006DAFBE /* AccountViewModel.swift in Sources */,
 				E4A702FD2B73A9D6004E657A /* MenuListView.swift in Sources */,
 				E4F547252B78457F0051D32D /* Color+Ext.swift in Sources */,
