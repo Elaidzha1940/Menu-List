@@ -13,8 +13,8 @@ final class NetworkManager {
     static let shared = NetworkManager()
     private let cache = NSCache<NSString, UIImage>()
     
-    static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/appetizers"
-    private let menuURL = baseURL + "appetizers"
+    static let baseURL = "http://localhost:8090"
+    private let menuURL = baseURL + "burgers"
     
     private init() {}
     
