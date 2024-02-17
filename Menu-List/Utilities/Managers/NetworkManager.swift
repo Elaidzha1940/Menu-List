@@ -13,8 +13,8 @@ final class NetworkManager {
     static let shared = NetworkManager()
     private let cache = NSCache<NSString, UIImage>()
     
-    static let baseURL = "http://localhost:8090"
-    private let menuURL = baseURL + "burgers"
+    static let baseURL = ""
+    private let menuURL = baseURL + "menu"
     
     private init() {}
     
