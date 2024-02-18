@@ -31,7 +31,6 @@ struct MenuTabView: View {
                     Text("Home")
                 }
         }
-        .accentColor(.brandPrimaryColor)
     }
 }
 
