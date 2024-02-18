@@ -57,6 +57,15 @@ struct AccountView: View {
                 .toggleStyle(SwitchToggleStyle(tint: .brandPrimaryColor))
             }
             .navigationTitle("Account")
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Button(action: {
+                        focusedTextField = nil
+                    }, label: {
+                        Text("Dismiss")
+                    })
+                }
+            }
         }
         .onAppear {
             viewModel.retrievedUser()
