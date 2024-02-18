@@ -15,6 +15,28 @@ extension String {
 ``````````
 ----------
 
+ViewModifier
+------------
+``````````ruby
+
+struct StandardButton: ViewModifier {
+    
+    func body(content: Content) -> some View {
+        content
+            .buttonStyle(.bordered)
+            .tint(.brandPrimary)
+            .controlSize(.large)
+    }
+}
+
+extension View {
+    func standardButton() -> some View {
+        self.modifier(StandardButton())
+    }
+}
+``````````
+----------
+
 Menu-List
 ----------
 - Menu-List - App Lifecycle.
