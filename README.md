@@ -34,10 +34,14 @@ extension View {
         self.modifier(StandardButton())
     }
 }
+``````````
 
 You can apply modifier(_:)
 ----------
+``````````ruby
 .modifier(StandardButton())
+
+.standardButton()
 
 ``````````
 ----------
