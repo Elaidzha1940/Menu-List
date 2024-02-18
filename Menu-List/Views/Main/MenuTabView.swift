@@ -10,6 +10,8 @@
 import SwiftUI
 
 struct MenuTabView: View {
+    @EnvironmentObject var order: Order
+
     var body: some View {
         
         TabView {
@@ -21,6 +23,7 @@ struct MenuTabView: View {
             
             OrderView()
                 .tabItem { Label("Order", systemImage: "bag.fill") }
+                .badge(order.items.count)
         }
     }
 }

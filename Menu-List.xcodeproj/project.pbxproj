@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E405865F2B8273EC0025D02C /* CustomModifires.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405865E2B8273EC0025D02C /* CustomModifires.swift */; };
 		E40DE2BF2B76A487002644B1 /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40DE2BE2B76A487002644B1 /* MenuListViewModel.swift */; };
 		E41D2FA42B7CDBEA00216DBF /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41D2FA32B7CDBEA00216DBF /* EmptyState.swift */; };
 		E41D2FA62B7D053300216DBF /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41D2FA52B7D053300216DBF /* Order.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E405865E2B8273EC0025D02C /* CustomModifires.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifires.swift; sourceTree = "<group>"; };
 		E40DE2BE2B76A487002644B1 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
 		E41D2FA32B7CDBEA00216DBF /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		E41D2FA52B7D053300216DBF /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				E44FC8FD2B7AE30C00C3129E /* MLButton.swift */,
 				E44FC8FF2B7AE4CD00C3129E /* XDissmissButton.swift */,
+				E405865E2B8273EC0025D02C /* CustomModifires.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				E4F547232B7843F00051D32D /* LoadingView.swift in Sources */,
 				E44FC9002B7AE4CD00C3129E /* XDissmissButton.swift in Sources */,
 				E4A7030D2B73E533004E657A /* NetworkManager.swift in Sources */,
+				E405865F2B8273EC0025D02C /* CustomModifires.swift in Sources */,
 				E4A702F12B73A843004E657A /* MenuTabView.swift in Sources */,
 				E4F547272B78E4E30051D32D /* RemoteImage.swift in Sources */,
 				E461518D2B7BACF2006DAFBE /* String+Ext.swift in Sources */,
