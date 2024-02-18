@@ -19,3 +19,9 @@ struct StandardButton: ViewModifier {
             .controlSize(.large)
     }
 }
+
+extension View {
+    func standardButton() -> some View {
+        self.modifier(StandardButton())
+    }
+}

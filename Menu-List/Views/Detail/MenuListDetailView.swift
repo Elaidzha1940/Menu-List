@@ -47,7 +47,8 @@ struct MenuListDetailView: View {
                 Text("$\(menu.price, specifier: "%.2f") - Add to Order")
             })
             .modifier(StandardButton())
-            .padding(.bottom, 10)
+            //.standardButton()
+            .padding(.bottom, 25)
         }
         .frame(width: 300, height: 525)
         .background(Color(.systemBackground))
