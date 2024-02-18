@@ -18,6 +18,9 @@ struct MenuListView: View {
             NavigationView {
                 List(viewModel.menu) { menu in
                     MenuListCell(menu: menu)
+                        //.listRowSeparator(.hidden)
+                        //.listItemTint(.brandPrimaryColor)
+                        //.listRowSeparatorTint(.brandPrimaryColor)
                         .onTapGesture {
                             viewModel.selectedMenuListModel = menu
                             viewModel.isShowingDetail = true

@@ -14,22 +14,13 @@ struct MenuTabView: View {
         
         TabView {
             MenuListView()
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                }
+                .tabItem { Label("Home", systemImage: "house.fill") }
             
             AccountView()
-                .tabItem {
-                    Image(systemName: "person.fill")
-                    Text("Account")
-                }
+                .tabItem { Label("Account", systemImage: "person.fill") }
             
             OrderView()
-                .tabItem {
-                    Image(systemName: "bag.fill")
-                    Text("Home")
-                }
+                .tabItem { Label("Order", systemImage: "bag.fill") }
         }
     }
 }
