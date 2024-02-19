@@ -19,56 +19,55 @@ final class NetworkManager {
     private init() {}
     
     //MARK: Before Asyn/await
-    //    func getMenu(completion: @escaping (Result<[MenuListModel], MError>) -> ()) {
-    //        guard let url = URL(string: menuURL) else {
-    //            completion(.failure(.invalidURL))
-    //            return
-    //        }
-    //
-    //        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
-    //            if let _ = error {
-    //                completion(.failure(.unableToComplete))
-    //                return
-    //            }
-    //
-    //            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-    //                completion(.failure(.invalidResponse))
-    //                return
-    //            }
-    //
-    //            guard let data = data else {
-    //                completion(.failure(.invalidData))
-    //                return
-    //            }
-    //
-    //            do {
-    //                let decoder = JSONDecoder()
-    //                let decodedResponse = try decoder.decode(MenuListResponse.self, from: data)
-    //                completion(.success(decodedResponse.request))
-    //            } catch {
-    //                completion(.failure(.invalidData))
-    //            }
-    //        }
-    //
-    //        task.resume()
-    //    }
+        func getMenu(completion: @escaping (Result<[MenuListModel], MError>) -> ()) {
+            guard let url = URL(string: menuURL) else {
+                completion(.failure(.invalidURL))
+                return
+            }
+    
+            let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+                if let _ = error {
+                    completion(.failure(.unableToComplete))
+                    return
+                }
+    
+                guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+                    completion(.failure(.invalidResponse))
+                    return
+                }
+    
+                guard let data = data else {
+                    completion(.failure(.invalidData))
+                    return
+                }
+    
+                do {
+                    let decoder = JSONDecoder()
+                    let decodedResponse = try decoder.decode(MenuListResponse.self, from: data)
+                    completion(.success(decodedResponse.request))
+                } catch {
+                    completion(.failure(.invalidData))
+                }
+            }
+    
+            task.resume()
+        }
     
     
-    func getMenu() async throws -> [MenuListModel] {
-        guard let url = URL(string: menuURL) else {
-            throw MError.invalidURL
-        }
-        
-        let (data, response) = try await URLSession.shared.data(from: url)
-        
-        do {
-            let decoder = JSONDecoder()
-            let decodedResponse = try decoder.decode(MenuListResponse.self, from: data)
-            return decodedResponse.request
-        } catch {
-            throw MError.invalidData
-        }
-    }
+//    func getMenu() async throws -> [MenuListModel] {
+//        guard let url = URL(string: menuURL) else {
+//            throw MError.invalidURL
+//        }
+//        
+//        let (data, _) = try await URLSession.shared.data(from: url)
+//        
+//        do {
+//            let decoder = JSONDecoder()
+//            return try decoder.decode(MenuListResponse.self, from: data).request
+//        } catch {
+//            throw MError.invalidData
+//        }
+//    }
     
     
     func downloadImage(fromURLString urlString: String, completion: @escaping (UIImage?) -> ()) {
