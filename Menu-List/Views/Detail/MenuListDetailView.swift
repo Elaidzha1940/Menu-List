@@ -43,10 +43,10 @@ struct MenuListDetailView: View {
                 order.add(menu)
                 isShowingDetail = false
             }, label: {
-               //MLButton(title: "\(menu.price, specifier: "%.2f") - Add to Order")
-                Text("$\(menu.price, specifier: "%.2f") - Add to Order")
+               MLButton(title: "$\(menu.price, specifier: "%.2f") - Add to Order")
+                //Text("$\(menu.price, specifier: "%.2f") - Add to Order")
             })
-            .modifier(StandardButton())
+            //.modifier(StandardButton())
             //.standardButton()
             .padding(.bottom, 25)
         }

@@ -28,10 +28,10 @@ struct OrderView: View {
                     Button(action: {
                         //action
                     }, label: {
-                        //MLButton(title: "$\(order.totalPrice, specifier: "%.2f") - Place Order")
-                        Text("$\(order.totalPrice, specifier: "%.2f") - Place Order")
+                        MLButton(title: "$\(order.totalPrice, specifier: "%.2f") - Place Order")
+                        //Text("$\(order.totalPrice, specifier: "%.2f") - Place Order")
                     })
-                    .modifier(StandardButton())
+                    //.modifier(StandardButton())
                     .padding(.bottom, 10)
                 }
                 
