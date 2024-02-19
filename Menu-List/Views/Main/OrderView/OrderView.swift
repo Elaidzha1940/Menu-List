@@ -26,7 +26,7 @@ struct OrderView: View {
                     .listStyle(.plain)
                     
                     Button(action: {
-                        print("order")
+                        print("order place")
                     }, label: {
                         MLButton(title: "$\(order.totalPrice, specifier: "%.2f") - Place Order")
                     })
