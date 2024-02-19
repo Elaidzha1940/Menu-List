@@ -19,7 +19,7 @@ struct MLButton: View {
                 .frame(maxWidth: .infinity)
                 .frame(height: 50)
                 .foregroundColor(Color(.systemBackground))
-                .background(Color.brandPrimaryColor)
+                .background(Color.brandPrimaryColor.gradient)
                 //.background(backroundColor.gradient)
                 .cornerRadius(15)
                 .padding()

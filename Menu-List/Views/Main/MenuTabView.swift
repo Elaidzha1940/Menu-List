@@ -30,4 +30,5 @@ struct MenuTabView: View {
 
 #Preview {
     MenuTabView()
+        .environmentObject(Order())
 }
