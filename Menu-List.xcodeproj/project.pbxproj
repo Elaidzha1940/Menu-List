@@ -96,6 +96,7 @@
 		E44FC8FB2B7AE2D700C3129E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E41D2FA22B7CDBD400216DBF /* Empty States */,
 				E4478DB22B83A24C007B7502 /* CustomModifires */,
 				E44FC8FC2B7AE2E700C3129E /* Buttons */,
 				E4F5472D2B78EE7E0051D32D /* UIKit Components */,
@@ -197,7 +198,6 @@
 		E4A703042B73B323004E657A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E41D2FA22B7CDBD400216DBF /* Empty States */,
 				E44FC8FB2B7AE2D700C3129E /* Components */,
 				E4A7030B2B73E35D004E657A /* Detail */,
 				E4A703052B73B5F6004E657A /* Main */,

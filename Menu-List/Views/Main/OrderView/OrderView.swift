@@ -13,30 +13,29 @@ struct OrderView: View {
     @EnvironmentObject var order: Order
     
     var body: some View {
-        
         NavigationView {
             ZStack {
                 VStack {
                     List {
                         ForEach(order.items) { menu in
                             MenuListCell(menu: menu)
+                                .listRowSeparator(.hidden)
                         }
                         .onDelete(perform: order.deleteItems)
                     }
                     .listStyle(.plain)
                     
                     Button(action: {
-                        //action
+                        print("order")
                     }, label: {
                         MLButton(title: "$\(order.totalPrice, specifier: "%.2f") - Place Order")
-                        //Text("$\(order.totalPrice, specifier: "%.2f") - Place Order")
                     })
-                    //.modifier(StandardButton())
-                    .padding(.bottom, 10)
+                    .padding(.bottom, 15)
                 }
                 
                 if order.items.isEmpty {
-                    EmptyState(imageName: "empty-order", message: "You have no items in your order. \nPlease add an appetizer!")
+                    EmptyState(imageName: "empty-order",
+                               message: "You have no items in your order.\nPlease add an appetizer!")
                 }
             }
             .navigationTitle("Orders")
@@ -44,6 +43,14 @@ struct OrderView: View {
     }
 }
 
+//#if DEBUG
+
 #Preview {
     OrderView()
+        .environmentObject(Order())
 }
+
+//#endif
+
+
+

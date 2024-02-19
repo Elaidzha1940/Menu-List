@@ -19,16 +19,16 @@ struct MenuListDetailView: View {
         VStack {
             MenuListRemoteImage(urlString: menu.imageURL)
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 300, height: 225)
+                .frame(width: 325, height: 250)
             
             VStack {
                 Text(menu.name)
-                    .font(.system(size: 25, weight: .semibold, design: .monospaced))
+                    .font(.system(size: 20, weight: .semibold, design: .monospaced))
                 
                 Text(menu.description)
                     .font(.system(size: 17, weight: .bold, design: .monospaced))
                     .multilineTextAlignment(.center)
-                    .padding(1)
+                    .padding()
                 
                 HStack(spacing: 40) {
                     NutritionInfo(title: "Calories", value: menu.calories)
@@ -50,7 +50,7 @@ struct MenuListDetailView: View {
             //.standardButton()
             .padding(.bottom, 25)
         }
-        .frame(width: 300, height: 525)
+        .frame(width: 325, height: 550)
         .background(Color(.systemBackground))
         .cornerRadius(15)
         .shadow(radius: 40)
@@ -73,9 +73,9 @@ struct NutritionInfo: View {
     var body: some View {
         VStack(spacing: 4) {
             Text(title)
-                .font(.system(size: 12, weight: .bold, design: .monospaced))
+                .font(.system(size: 13, weight: .bold, design: .monospaced))
             Text("\(value)")
-                .font(.system(size: 12, weight: .semibold, design: .monospaced))
+                .font(.system(size: 13, weight: .semibold, design: .monospaced))
                 .foregroundColor(.secondary)
         }
     }

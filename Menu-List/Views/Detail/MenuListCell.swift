@@ -33,7 +33,7 @@ struct MenuListCell: View {
             
             VStack(alignment: .leading, spacing: 3) {
                 Text(menu.name)
-                    .font(.system(size: 25, weight: .semibold, design: .monospaced))
+                    .font(.system(size: 20, weight: .semibold, design: .monospaced))
                 
                 Text("$\(menu.price, specifier: "%.2f")")
                     .font(.system(size: 15, weight: .semibold, design: .monospaced))
