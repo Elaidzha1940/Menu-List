@@ -63,6 +63,7 @@ import SwiftUI
                 } else {
                     alertItem = AlertContext.invalidResponse
                 }
+                
                 isLoading = false
             }
         }

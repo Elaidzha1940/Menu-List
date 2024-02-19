@@ -15,10 +15,21 @@ struct MenuListCell: View {
     var body: some View {
         
         HStack {
-            MenuListRemoteImage(urlString: menu.imageURL)
-                .scaledToFit()
-                .frame(width: 130, height: 90)
-                .cornerRadius(15)
+            //MARK: Before AsyncImage
+            //            MenuListRemoteImage(urlString: menu.imageURL)
+            //                .scaledToFit()
+            //                .frame(width: 130, height: 90)
+            //                .cornerRadius(15)
+            
+            AsyncImage(url: URL(string: menu.imageURL)) { image in
+                image
+                    .resizable()
+                    .modifier(StandardImage())
+            } placeholder: {
+                Image("dish-placeholder")
+                    .resizable()
+                    .modifier(StandardImage())
+            }
             
             VStack(alignment: .leading, spacing: 3) {
                 Text(menu.name)
