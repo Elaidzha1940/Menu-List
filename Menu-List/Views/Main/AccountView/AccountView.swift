@@ -40,7 +40,11 @@ struct AccountView: View {
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
                     
-                    DatePicker("Birthday", selection: $viewModel.user.birthdate, displayedComponents: .date)
+//                    DatePicker("Birthday", selection: $viewModel.user.birthdate, displayedComponents: .date)
+                    DatePicker("Birthday", 
+                               selection: $viewModel.user.birthdate,
+                               in: ,
+                               displayedComponents: .date)
                         .accentColor(.brandPrimaryColor)
                     
                     Button(action: {
