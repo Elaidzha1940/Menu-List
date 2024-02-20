@@ -101,7 +101,7 @@
 				E41D2FA22B7CDBD400216DBF /* Empty States */,
 				E4478DB22B83A24C007B7502 /* CustomModifires */,
 				E44FC8FC2B7AE2E700C3129E /* Buttons */,
-				E4F5472D2B78EE7E0051D32D /* UIKit Components */,
+				E4F5472D2B78EE7E0051D32D /* ProgressView */,
 				E4F5472E2B78EEBF0051D32D /* Image */,
 			);
 			path = Components;
@@ -280,12 +280,12 @@
 			path = Alerts;
 			sourceTree = "<group>";
 		};
-		E4F5472D2B78EE7E0051D32D /* UIKit Components */ = {
+		E4F5472D2B78EE7E0051D32D /* ProgressView */ = {
 			isa = PBXGroup;
 			children = (
 				E4F547222B7843F00051D32D /* LoadingView.swift */,
 			);
-			path = "UIKit Components";
+			path = ProgressView;
 			sourceTree = "<group>";
 		};
 		E4F5472E2B78EEBF0051D32D /* Image */ = {
