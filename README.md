@@ -1,4 +1,4 @@
-Menu-List.
+⌨️ Menu-ListApp with SwiftUI.
 ==========
 
 <img src="https://github.com/Elaidzha1940/Menu-List/assets/64445918/b3b98761-0bc6-4447-b576-3a3fe293ab39" width="150" height="290">
