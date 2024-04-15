@@ -1,6 +1,37 @@
 ⌨️ Menu-ListApp with SwiftUI.
 ==========
 
+- Menu-List - App Lifecycle.
+- Menu-List - Model.
+- Menu-List - List View.
+- Menu-List - Network Manager.
+- Menu-List - Connecting the UI.
+- Menu-List - Errors & Alerts.
+- Menu-List - Loading View.
+- Menu-List - Download Image.
+- Menu-List - Remote Image.
+- Menu-List - Project cleanup & organization.
+- Menu-List - Detail View UI Setup.
+- Menu-List - Detail View UI Connections.
+- Menu-List - Detail View Refactor.
+- Menu-List - Account View UI Setup.
+- Menu-List - View Model & Text Validation.
+- Menu-List - @AppStorage.
+- Menu-List - Order Screen UI.
+- Menu-List - Empty State.
+- Menu-List - @EnvironmentObject - Order.
+- Menu-List - iOS 15 - Initial Run.
+- Menu-List - iOS 15 - Tabbar Badge & List Separator.
+- Menu-List - iOS 15 - @FocusState Keyboard.
+- Menu-List - iOS 15 - Async/Await Network Calls.
+- Menu-List - iOS 15 - AsyncImage.
+- Menu-List - iOS 16 - Regex, guard let.
+- Menu-List - App Optimizations.
+- Menu-List - Data Flow Review.
+- Menu-List - iOS 17 @Observable.
+
+----------
+
 <img src="https://github.com/Elaidzha1940/Menu-List/assets/64445918/b3b98761-0bc6-4447-b576-3a3fe293ab39" width="150" height="290">
 <img src="https://github.com/Elaidzha1940/Menu-List/assets/64445918/8173ecb9-03ce-4077-9e72-118c2fda9d1e" width="150" height="290">
 <img src="https://github.com/Elaidzha1940/Menu-List/assets/64445918/615dd51b-2436-467b-87b0-f5ad3797cbd6" width="150" height="290">
@@ -102,35 +133,3 @@ You can apply modifier(_:)
 ``````````
 ----------
 
-Menu-List
-----------
-- Menu-List - App Lifecycle.
-- Menu-List - Model.
-- Menu-List - List View.
-- Menu-List - Network Manager.
-- Menu-List - Connecting the UI.
-- Menu-List - Errors & Alerts.
-- Menu-List - Loading View.
-- Menu-List - Download Image.
-- Menu-List - Remote Image.
-- Menu-List - Project cleanup & organization.
-- Menu-List - Detail View UI Setup.
-- Menu-List - Detail View UI Connections.
-- Menu-List - Detail View Refactor.
-- Menu-List - Account View UI Setup.
-- Menu-List - View Model & Text Validation.
-- Menu-List - @AppStorage.
-- Menu-List - Order Screen UI.
-- Menu-List - Empty State.
-- Menu-List - @EnvironmentObject - Order.
-- Menu-List - iOS 15 - Initial Run.
-- Menu-List - iOS 15 - Tabbar Badge & List Separator.
-- Menu-List - iOS 15 - @FocusState Keyboard.
-- Menu-List - iOS 15 - Async/Await Network Calls.
-- Menu-List - iOS 15 - AsyncImage.
-- Menu-List - iOS 16 - Regex, guard let.
-- Menu-List - App Optimizations.
-- Menu-List - Data Flow Review.
-- Menu-List - iOS 17 @Observable.
-
----------
