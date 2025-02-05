@@ -136,3 +136,35 @@ You can apply modifier(_:)
 ``````````
 ----------
 
+> ### AdaptiveTextField
+
+```swift
+import SwiftUI
+
+struct AdaptiveTextField: View {
+    @State private var text: String = ""
+
+    var body: some View {
+        HStack {
+            TextField("Enter text", text: $text)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 10)
+                .background(
+                    Capsule()
+                        .fill(Color.blue)
+                )
+                .foregroundColor(.white)
+                .font(.system(size: 18, weight: .semibold, design: .rounded))
+                .frame(minWidth: 50)
+                .fixedSize(horizontal: true, vertical: false)
+        }
+        .padding()
+    }
+}
+
+#Preview {
+    AdaptiveTextField()
+}
+```
+
+-----
